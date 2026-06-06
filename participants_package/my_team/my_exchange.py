@@ -36,6 +36,10 @@ class MyRegulator(RegulatoryAgent):
         if alert is not None:
             self.alerts.append(alert)
             return alert
+        alert = self.spoof.on_pre_submit(order, book)
+        if alert is not None:
+            self.alerts.append(alert)
+            return alert
         self.open_orders[order.order_id] = order
         return None
 

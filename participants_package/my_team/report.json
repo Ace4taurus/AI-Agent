@@ -88,21 +88,21 @@
     ]
   },
   "task2": {
-    "score": 30.0,
+    "score": 100.0,
     "component_scores": {
       "price_time_priority": 100.0,
-      "surveillance": 0.0,
-      "f1": 0.0,
-      "response_latency": 0.0
+      "surveillance": 100.0,
+      "f1": 100.0,
+      "response_latency": 100.0
     },
     "metrics": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
       "latency_scores": {
-        "wash": 0.0,
-        "spoof": 0.0,
-        "pump": 0.0
+        "wash": 1.0,
+        "spoof": 1.0,
+        "pump": 1.0
       }
     },
     "scenarios": {
@@ -118,21 +118,21 @@
         "alert_count": 0
       },
       "wash_trading": {
-        "detected": false,
-        "latency": null,
-        "alert_count": 0
+        "detected": true,
+        "latency": 0,
+        "alert_count": 1
       },
       "spoofing": {
-        "detected": false,
-        "latency": null,
-        "alert_count": 0
+        "detected": true,
+        "latency": 0,
+        "alert_count": 1
       },
       "pump_and_dump": {
-        "detected": false,
-        "latency": null,
-        "alert_count": 0
+        "detected": true,
+        "latency": 0,
+        "alert_count": 1
       }
     }
   },
-  "overall_score": 32.9
+  "overall_score": 67.9
 }
